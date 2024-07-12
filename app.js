@@ -7,34 +7,34 @@
 // 10. CALCULATE AVERAGE OF AN ARRAY
 
 
-var numbers = [];
-var minNumber = [];
-
-for (let i = 0; i < 5; i--) {
-    numbers[i] = +prompt("Please Enter numbers");
-    if(numbers[i] < minNumber){
-        minNumber=numbers[i];
-    }
-}
-console.log(numbers);
-console.log(`The smallest number is ${minNumber}`);
-
-
-
-
-
-
 // var numbers = [];
-// var minNum = null; 
+// var minNumber = null;
 
-// for (var i = 1; i <= 5; i++) {
-//   numbers[i] = parseInt(prompt("Enter any numbers"));
-//   if (minNum === null || numbers[i] < minNum) {
-//     minNum = numbers[i];
-//   }
+// for (let i = 0; i < 5; i++) {
+//     numbers[i] = +prompt("Please Enter numbers");
+//     if(minNumber === null ||  numbers[i] > minNumber){
+//         minNumber=numbers[i];
+//     }
 // }
+// console.log(numbers);
+// console.log(`The smallest number is ${minNumber}`);
 
-// console.log(`The smallest number is: ${minNum}`);
+
+
+
+
+
+var numbers = [];
+var minNum = null; 
+
+for (var i = 1; i <= 5; i++) {
+  numbers[i] = parseInt(prompt("Enter any numbers"));
+  if (minNum === null || numbers[i] < minNum) {
+    minNum = numbers[i];
+  }
+}
+
+console.log(`The smallest number is: ${minNum}`);
 
 //PROBLEM 2
 
@@ -57,7 +57,7 @@ console.log(`The smallest number is ${minNumber}`);
 // let emptyArray = [];
 
 // for (let i = 0; i < 5; i++) {
-//     let num = +prompt(`Enter element ${i+1}:`);
+//     let num = prompt(`Enter element ${i+1}:`);
 //     emptyArray.push(num);
 // }
 
@@ -91,3 +91,17 @@ console.log(`The smallest number is ${minNumber}`);
 // let average = sum / emptyArray.length;
 // console.log(sum);
 // console.log("Average:", average);
+
+// let arr1 = [];
+// for (let i = 0; i < 5; i++){
+//     let arr2=+prompt(`Enter a number ${i+1}`);
+//     arr1.push(arr2);
+// }
+// console.log("Array:", arr1);
+// let sum = 0;
+// for (let i = 0; i < arr1.length; i++){
+//     sum += arr1[i];
+// }
+// let average = sum / arr1.length;
+// console.log(sum); //print sum of arrays
+// console.log(average); //print average of arrays
